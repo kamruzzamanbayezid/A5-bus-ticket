@@ -10,12 +10,72 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
       <script src="https://cdn.tailwindcss.com"></script>
 
+      <!-- Inter & Raleway fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
       <!-- Custom css -->
       <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
-      <h1>My Ticket</h1>
+<body class="font-inter">
+      <header class="max-w-[1170px] mx-auto">
+
+            <!-- Navbar section -->
+            <nav class="my-8">
+                  <div class="navbar bg-base-100">
+                        <div class="navbar-start">
+                              <div class="dropdown">
+                                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M4 6h16M4 12h8m-8 6h16" />
+                                          </svg>
+                                    </div>
+                                    <ul tabindex="0"
+                                          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-[#030712b3] text-lg font-medium w-52">
+                                          <li><a>Home</a></li>
+                                          <li><a>About</a></li>
+                                          <li><a>Destination</a></li>
+                                          <li><a>Search</a></li>
+                                    </ul>
+                              </div>
+                              <h1 class="cursor-pointer font-raleway text-[#030712] text-4xl font-extrabold">My-Ticket
+                              </h1>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                              <ul class="flex gap-10 text-[#030712b3] text-lg font-medium  px-1">
+                                    <li><a class="cursor-pointer">Home</a></li>
+                                    <li><a class="cursor-pointer">About</a></li>
+                                    <li><a class="cursor-pointer">Destination</a></li>
+                                    <li><a class="cursor-pointer">Search</a></li>
+                              </ul>
+                        </div>
+                        <div class="navbar-end">
+                              <button
+                                    class="flex items-center gap-1 bg-[#1dd1001a] border border-[#1dd10066] px-7 py-3 rounded-xl">
+                                    <span class="font-raleway color-green text-xl font-bold">Bus</span>
+                                    <img src="./images/tabler-icon-bus.svg" alt="Bus logo">
+                              </button>
+                        </div>
+                  </div>
+            </nav>
+
+            <!-- Banner section -->
+            <div class="text-center space-y-5 bg-green-50 bg-[./images/banner.png]">
+                  
+                  <h1 class="font-raleway text-6xl font-extrabold">End-to-End Travel with</h1>
+                  <h1 class="color-green font-raleway text-6xl font-extrabold">K.K Paribahan</h1>
+                  <p class="text-base">Experience the Paribahan Advantage: Speed, Safety, Satisfaction</p>
+
+                  <button class=" bg-[#1DD100] font-raleway text-xl font-bold px-7 py-3 rounded-xl">
+                        Buy Tickets
+                  </button>
+            </div>
+      </header>
 
 
       <!-- javascript links-->
