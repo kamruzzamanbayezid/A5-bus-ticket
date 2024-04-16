@@ -41,8 +41,33 @@
       height: 40px;
 }
 
+/* Responsive Media Query */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
+
+      #ticket-logo{ 
+            font-size: 20px;
+      }
+      .row {
+            gap: 10px;
+      }
+
+      .seat {
+            width: 60px;
+            height: 30px;
+            border-radius: 12px;
+            background: #F7F8F8;
+            color: rgba(3, 7, 18, 0.50);
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+      }
+}
+
+@media screen and (min-width: 376px) and (max-width: 576px) {
       .row {
 
             gap: 10px;
