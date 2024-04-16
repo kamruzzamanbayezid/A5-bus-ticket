@@ -45,9 +45,10 @@
 
 @media screen and (max-width: 375px) {
 
-      #ticket-logo{ 
+      #ticket-logo {
             font-size: 20px;
       }
+
       .row {
             gap: 10px;
       }
@@ -55,15 +56,15 @@
       .seat {
             width: 60px;
             height: 30px;
-            border-radius: 12px;
-            background: #F7F8F8;
-            color: rgba(3, 7, 18, 0.50);
             font-size: 14px;
             font-weight: 400;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
+      }
+
+      .new-seat {
+            width: 60px;
+            height: 30px;
+            font-size: 14px;
+            font-weight: 400;
       }
 }
 
@@ -77,15 +78,15 @@
       .seat {
             width: 73px;
             height: 36px;
-            border-radius: 12px;
-            background: #F7F8F8;
-            color: rgba(3, 7, 18, 0.50);
             font-size: 18px;
             font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
+      }
+
+      .new-seat {
+            width: 73px;
+            height: 36px;
+            font-size: 18px;
+            font-weight: 500;
       }
 }
 
