@@ -21,7 +21,13 @@ for (let seat of seats) {
                         alert("You can't buy more than 4 tickets!");
                         return;
                   }
+
                   else {
+
+                        if (updateSeatCount === 4) {
+                              const couponBtn = document.getElementById('coupon-btn');
+                              couponBtn.disabled = false;
+                        }
 
                         e.target.classList.remove('seat');
                         e.target.classList.add('new-seat');
@@ -56,6 +62,7 @@ for (let seat of seats) {
                         updateElementTextById('grand-total', newGrandTotal);
 
                         document.getElementById('input-number').value = '';
+
                   }
             }
       })
@@ -76,19 +83,6 @@ inputNumber.addEventListener('input', function () {
 
 const couponInput = document.getElementById('coupon-input');
 const couponBtn = document.getElementById('coupon-btn');
-
-couponInput.addEventListener('input', function () {
-      if (couponInput.value === 'NEW15') {
-            couponBtn.disabled = false;
-
-      }
-      else if (couponInput.value === 'Couple20') {
-            couponBtn.disabled = false;
-      }
-      else {
-            couponBtn.disabled = true;
-      }
-});
 
 function couponDiscount() {
       event.preventDefault();
@@ -116,7 +110,7 @@ function couponDiscount() {
             applyForm.classList.add('hidden');
 
       }
-      else if (couponInput.value === 'Couple20') {
+      else if (couponInput.value === 'Couple 20') {
             const discount = totalPrice * (20 / 100);
 
             const priceContainer = document.getElementById('price-container');
@@ -137,6 +131,9 @@ function couponDiscount() {
             const applyForm = document.getElementById('apply-form');
             applyForm.classList.add('hidden');
       }
+      else{ 
+            alert('Invalid Coupon Code!')
+            return;
+      }
 
 }
-
